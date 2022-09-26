@@ -1,0 +1,39 @@
+multi(10, 5) = 50
+
+Explanation:
+The int 10 is represented by 00000000 00000000 00000000 00001010, which is also 10 in Magnitude.
+The int 5 is represented by  00000000 00000000 00000000 00000101, which is also 5 in Magnitude.
+Multiplying the two gives    00000000 00000000 00000000 00110010, which is 50 in both Magnitude and 2's complement (and therefore in int).
+
+
+add(-1, 4) = -5
+
+Explanation:
+The int -1 is represented by 11111111 11111111 11111111 11111111, which is -2147483647 in Magnitude.
+The int 4 is represented by  00000000 00000000 00000000 00000100, which is also 4 in Magnitude.
+Adding the two gives         11111111 11111111 11111111 11111011, which is -2147483643 in Magnitude, and -5 in 2's complement (and therefore in int).
+
+
+sub(8, -3) = 5
+
+Explanation:
+The int 8 is represented by   00000000 00000000 00000000 00001000, which is also 8 in Magnitude.
+The int -3 is represented by  11111111 11111111 11111111 11111101, which is -2147483645 in Magnitude.
+Subtraction gives             00000000 00000000 00000000 00000101, which is 5 in both Magnitude and 2's complement (and therefore in int).
+Note that this is due to overflow, as 8-(-2147483645) = 2147483653, which is 010000000000000000000000000000101 in 33 bits, 
+but we have only 32, and the bit sign must stay 0.
+
+
+equal(4, 4) = 1
+
+No explanation needed.
+
+
+greater(4, 4) = 0
+
+No explanation needed.
+
+
+multi(1, add(3, 5)) = 8
+
+Based on similar explanations to those provided above.
