@@ -14,4 +14,5 @@ In order to compile the code:
 In order to run the code:  
   ./a.exe  
 
-
+  
+![image](https://user-images.githubusercontent.com/83518959/192406164-6b733b31-550b-4e21-91c9-0f0f3fad4fcb.png)  
