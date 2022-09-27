@@ -10,7 +10,7 @@ In order to implement that magnitude method on integers, **we define a new typed
 and we use some functions on that variable, such as **add, sub, multiply, equal method and compare size method**.  
   
 In order to compile the code:  
-  gcc main1.c ex2.c  
+  gcc main1.c ex2.c ex2.h  
 In order to run the code:  
   ./a.exe  
 
